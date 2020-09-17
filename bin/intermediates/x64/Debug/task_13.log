@@ -1,9 +1,0 @@
-﻿  In file included from Figures.cpp:1:
-./Figures.h(103,15): warning : private field 'vertexes' is not used [-Wunused-private-field]
-./Figures.h(110,15): warning : private field 'centre' is not used [-Wunused-private-field]
-./Figures.h(111,11): warning : private field 'radius' is not used [-Wunused-private-field]
-  In file included from Main.cpp:2:
-./Figures.h(103,15): warning : private field 'vertexes' is not used [-Wunused-private-field]
-./Figures.h(110,15): warning : private field 'centre' is not used [-Wunused-private-field]
-./Figures.h(111,11): warning : private field 'radius' is not used [-Wunused-private-field]
-  task_13.vcxproj -> F:\Projects\Универ\ООП\task_13\bin\x64\Debug\task_13.exe
