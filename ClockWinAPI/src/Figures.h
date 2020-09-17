@@ -50,7 +50,7 @@ public:
 	Line(const Point& ent, const Point& dest, Style style, uint32_t width, uint16_t r, uint16_t g, uint16_t b);
 	~Line();
 
-	void Bind(const HDC& hdc);
+	void Select(const HDC& hdc);
 	void Draw(const HDC& hdc) const;
 	void SetEntryPoint(const Point& point);
 	void SetDestPoint(const Point& point);

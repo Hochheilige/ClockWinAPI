@@ -68,7 +68,7 @@ Line::~Line() {
 	DeleteObject(pen);
 }
 
-void Line::Bind(const HDC& hdc) {
+void Line::Select(const HDC& hdc) {
 	SetPen();
 	SelectObject(hdc, pen);
 }
