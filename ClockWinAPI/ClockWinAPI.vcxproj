@@ -118,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,15 +142,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Figures.cpp" />
+    <ClCompile Include="src\Arrow.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Time.cpp" />
-    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Figures.h" />
+    <ClInclude Include="src\Clock.h" />
+    <ClInclude Include="src\Arrow.h" />
     <ClInclude Include="src\Time.h" />
-    <ClInclude Include="src\Window.h" />
+    <ClInclude Include="src\WinAPIWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

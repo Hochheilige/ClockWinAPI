@@ -21,9 +21,9 @@ void Time::Increase() {
 }
 
 void Time::PrintCurrentTimeStd() const {
-    std::cout << std::setw(2) << std::setfill('0') << static_cast<uint16_t>(hours) << ':'
-              << std::setw(2) << std::setfill('0') << static_cast<uint16_t>(minutes) << ':'
-              << std::setw(2) << std::setfill('0') << static_cast<uint16_t>(seconds) << std::endl;
+    std::cout << std::setw(2) << std::setfill('0') << hours << ':'
+              << std::setw(2) << std::setfill('0') << minutes << ':'
+              << std::setw(2) << std::setfill('0') << seconds << std::endl;
 }
 
 void Time::PrintCurrentTimeWnd() const {

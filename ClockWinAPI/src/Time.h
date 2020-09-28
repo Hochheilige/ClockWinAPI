@@ -10,7 +10,7 @@
 class Time {
 public:
 	Time() : hours(0), minutes(0), seconds(0) {}
-	Time(const uint8_t hrs, const uint8_t min, const uint8_t sec)
+	Time(const uint16_t hrs, const uint16_t min, const uint16_t sec)
 		: hours(hrs), minutes(min), seconds(sec) {}
 	Time(const tm* const now_time)
 		: hours(now_time->tm_hour), 
@@ -25,6 +25,9 @@ public:
 	void PrintCurrentTimeStd() const;
 	void PrintCurrentTimeWnd() const;
 	Time CurrentTime() const;
+	inline uint16_t GetHours() { return hours; }
+	inline uint16_t GetMinutes() { return minutes; }
+	inline uint16_t GetSeconds() { return seconds; }
 private:
-	uint8_t hours, minutes, seconds;
+	uint16_t hours, minutes, seconds;
 };
